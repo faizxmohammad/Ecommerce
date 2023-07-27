@@ -1,0 +1,149 @@
+.banner{
+    background: url('../assests/images/banner.png') no-repeat center/cover ;
+    height: 100vh;  
+    font-family: sans-serif;
+    word-break: break;
+    position: relative;
+
+
+}
+
+.banner__title{
+    padding: 18% 0 20px 100px;
+}
+.banner__title > h1{
+    font-size: 60px;
+    color: #003d29;
+}
+.banner__desc{
+    padding: 50px 0 20px 100px;
+}
+.banner__desc > p{
+    font-size: 25px;
+}
+
+.banner__button{
+    padding: 50px 0 20px 100px;
+    
+
+}
+
+.banner__button > button{
+    height: 50px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #003d29;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .banner{
+        height: fit-content;
+    }
+    .banner__title{
+        padding: 40% 10% 12% 28px;
+    }
+    .banner__title > h1{
+        font-size: 40px;
+    }
+    .banner__desc{
+        padding: 0% 10% 16% 28px;
+        
+        
+    }
+    .banner__desc > p{
+        font-size: 24px;
+        color: rgb(33, 33, 33);
+    }
+
+    .banner__button{
+        padding: 8% 10% 20% 28px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:280px){
+    .banner{
+        height: 80%;
+    }
+    .banner__title{
+        padding: 16% 20% 10% 40px;
+    }
+    .banner__title > h1{
+        padding: 0;
+        font-size: 34px;
+
+    }
+    .banner__desc{
+        padding: 10px 10px 0 40px;
+    }
+    .banner__desc > p{
+        font-size: 16px;
+    }
+    .banner__button{
+        padding: 18% 40px;
+
+    }
+    .banner__button > button{
+        height: 40px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .banner{
+        height: fit-content;
+    }
+    .banner__title{
+        padding-left: 40px;
+    }
+    .banner__desc{
+        padding-left: 40px;
+        word-wrap: normal;
+    }
+    .banner__button{
+        padding-left: 40px;
+
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .banner{
+        height: fit-content;
+    }
+    .banner__button{
+        padding-bottom: 10%;
+    }
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    .banner{
+        height: fit-content;
+    }
+    .banner__button{
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (min-width:1201px){
+    .banner{
+        height: fit-content;
+    }
+    .banner__button{
+        padding-bottom: 10%;
+    }
+}
