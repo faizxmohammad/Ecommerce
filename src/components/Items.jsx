@@ -3,6 +3,7 @@ import './items.css'
 import likeIcon from '../assests/images/like.png'
 import {data} from '../carouselData'
 
+
 function Items() {
   return (
     <>
