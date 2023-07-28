@@ -4,7 +4,7 @@ import Banner from './components/Banner'
 import Footer from './components/Footer'
 import Gadgets from './components/Gadgets'
 import Items from './components/Items'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 
 
 function App() {
