@@ -50,7 +50,7 @@
     width: 200px;
     font-family: sans-serif;
     margin: 0;
-    height: 400px;
+    height: 500px;
     
 }
 .cards{
@@ -76,9 +76,6 @@
     right: 10%;
     top: 5%;
     
-
-    
-
 }
 .cards > .favorite__icon:hover{
     background-color: rgb(251, 213, 219);
@@ -188,4 +185,63 @@
 
 .products > .cart__button > button:hover{
     color: white;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .gadgets{
+        margin: 1rem 1rem 0rem 1rem;
+    }
+    .gadgets > h2{
+        margin-left: 2rem;
+
+    }
+    .gadgets > .button{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .card__wrapper{
+        width: fit-content;
+        margin-right: 2,6rem;
+        margin-left: 2.6rem;
+        height: 500px;
+    }
+
+    .cards{
+        margin-bottom: 0.1rem;
+    }
+
+
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .gadgets{
+        margin: 1rem 2.5rem 0rem 0.2rem;
+    }
+    
+}
+
+@media screen and (max-width:280px){
+    .gadgets{
+        margin: 0rem;
+    }
+
+    .gadgets__cards{
+        width: 300px;
+        display: flex;
+        margin-top: 2rem;
+        height: fit-content;
+    }
+    .cards{
+        /* height: 100%; */
+        width: max-content;
+        margin-left: 0;
+    }
+
+    .products > .product__title{
+        width: 250px;
+    }
+    .products > .product__desc{
+        width: 250px;
+    }
 }

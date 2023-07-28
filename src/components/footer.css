@@ -223,9 +223,12 @@
     .footer__wrapper{
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
+        margin-left: 0.4rem;
+        justify-content: center;
     }
     .wrapper__left{
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
     .wrapper__left > .first{
         margin-left: 1rem;
@@ -239,6 +242,14 @@
     .wrapper__right{
         margin-top: 2rem;
         margin-left: 4rem;
+    }
+
+    .footer__bottom {
+        margin-left: 0rem;
+    }
+    .footer__bottom > .bottom__wrapper{
+        flex-wrap: wrap;
+        margin-top: 1rem;
     }
 
 }
@@ -279,4 +290,37 @@
         margin-left: 2rem;
         margin-top: 15%;
     }
+    .footer__bottom > .bottom__wrapper{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .footer__bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__bottom > .bottom__wrapper{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .footer__bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__bottom > .bottom__wrapper{
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: 6rem;
+    }
+
 }
