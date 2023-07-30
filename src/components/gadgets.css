@@ -50,7 +50,7 @@
     width: 200px;
     font-family: sans-serif;
     margin: 0;
-    height: 500px;
+    height: 540px;
     
 }
 .cards{
@@ -59,8 +59,9 @@
     width: 300px;
     background-color: #F5F6F6;
     border-radius: 10px;
-    height: 300px;
+    height: 350px;
     cursor: pointer;
+    /* padding: -60px; */
    
 }
 .cards > .favorite__icon{
@@ -90,12 +91,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }
 
 .cards > .image > img{
     height: 250px;
     width: 250px;
     margin-top: 20%;
+    /* filter: grayscale(100%); */
 
     transition: all 0.2s ease-in-out;
 }
