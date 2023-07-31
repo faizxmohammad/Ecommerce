@@ -20,6 +20,7 @@ function Gadgets() {
                     gadgetsData.map((items) =>(
                         items.sectionItems.map ((item)=>(
                             item.sectionItems.map((product , index)=>(  
+                                
                                 <div className="card__wrapper" key={`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}>
                                     {/* <p>key = {`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}</p> */}
                                     <div className="cards" >

@@ -4,6 +4,7 @@
     outline: 0;
     outline: none;
     }
+
 .gadgets {
     overflow: hidden;
     margin: 1rem 5rem 0 3.8rem;
@@ -12,7 +13,7 @@
 .gadgets > h2{
     font-size: 28px;
     font-family: sans-serif;
-    /* margin-left: 5.5rem; */
+    /* margin-left: 0rem; */
 }
 
 .button{
@@ -219,6 +220,12 @@
         margin: 0rem;
     }
 
+    .gadgets > h2 {
+        margin-left: 2rem;
+    }
+    .gadgets > .button{
+        margin-left: 2rem;
+    }
     .gadgets__cards{
         width: 300px;
         display: flex;
@@ -270,16 +277,80 @@
 
 @media screen and (min-width:481px) and (max-width:768px) {
     .gadgets{
-        margin: 1rem 2.5rem 0rem 4.5rem;
+        margin: 2rem;
+
     }
     .gadgets > h2{
-        margin-left: 0.5rem;
+        margin-left: 2.5rem;
     }
-    .gadgets > .button {
-        margin-left: 0.5rem;
-        margin-bottom: 2rem;
+    .gadgets > .button  {
+        margin-left: 2.5rem;
     }
+    .gadgets__cards{
+        gap: 0px;
+        margin: 2rem 0 0 0;
+        flex-direction: column;
+        /* margin-left: 20px;    */
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .card__wrapper{
+        width: fit-content;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        /* border: 1px solid green; */
+        
+    }
+    .card__wrapper > .cards{
+        width: 500px;
+        /* height: 570px; */
+        border-radius: 10px;
+
+    }
+    .card__wrapper > .cards > .image{
+        /* height: fit-content;
+        width: fit-content; */
+        padding-bottom: 3rem;
+    }
+    .card__wrapper > .cards > .image > img{
+        height: 300px;
+        width: 300px;
     
-    
+    }
+
+
 }
 
+@media screen and (min-width:769px) and (max-width:1024px){
+    .gadgets{
+        margin: 0rem;
+
+    }
+    .gadgets > h2{
+        margin-left: 5rem;
+    }
+    .gadgets > .button  {
+        margin-left: 5rem;
+    }
+    .gadgets__cards{
+        padding: 0;
+        width: 100%;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    
+    }
+    .card__wrapper{
+        width: fit-content;
+    }
+
+}
+@media screen and (min-width:1025px){
+    .gadgets > h2{
+        margin-left: 2rem;
+    }
+    .gadgets > .button  {
+        margin-left: 2rem;
+    }
+
+}

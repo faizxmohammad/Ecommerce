@@ -329,7 +329,7 @@
 @media screen and (min-width:481px) and (max-width:768px) {
     .product{
         flex-direction: column;
-        margin-left: 5rem;
+        margin-left: 4rem;
         margin-right: 5rem;
         /* gap: 10px;align-items: flex-start; */
     }
@@ -338,11 +338,11 @@
 
     }
     .product > .product__left >.top {
-        width: 100%;
-        height: 50vh;
+        width: 80vw;
+        height: 60vh;
     }
     .product > .product__left >.top > img{
-        width: 550px;
+        width: 500px;
         height: 500px;
     }
     .product > .product__left> .left__bottom{
@@ -413,3 +413,67 @@
     }
     
 } */
+
+@media  screen and (max-width:280px) {
+    .product{
+        flex-direction: column;
+        margin:0 20px;
+        /* border: 2px solid red; */
+    }
+    .product > .product__left > .top{
+        height: fit-content;
+        width: 255px;
+    }
+    
+    .product > .product__left > .top > img{
+        height: 250px;
+        width: 250px;
+    }
+    .product > .product__right > .right__top > .title {
+        font-size: 24px;
+    }
+    .product > .product__right > .right__top > .desc{
+        font-size: 14px;
+    }
+    .product > .product__right > .right__between > .price {
+        font-size: 20px;
+    }
+    .product__right__bottom > .top >.itemsLeft {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+
+
+
+    .product__right__bottom > .top {
+        flex-direction: column;
+
+    }
+    .product > .product__left > .left__bottom{
+        width: fit-content;
+    }
+    .product > .product__left > .left__bottom > img{
+        height: 80px;
+    }
+    .product__right__bottom >.bottom > .bottom__top {
+        width: 250px;
+    }
+    .product__right__bottom > .middle {
+        flex-direction: column;
+    }
+    .product__right__bottom >.bottom > .bottom__bottom {
+        width: 250px;
+    }
+    .product__right__bottom > .middle >.buy{
+        width: 250px;
+    }
+    .product__right__bottom > .middle >.addToCart{
+        width: 250px;
+    }
+
+
+}
