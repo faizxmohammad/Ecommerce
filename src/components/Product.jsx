@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { Component, useContext, useState } from 'react'
 import './product.css'
 import returnIcon from '../assests/images/rotate-left-solid.svg'
 import truckIcon from '../assests/images/truck-solid.svg'
-const Product = ({id}) => {
+import { uniqueKeyContext } from '../App'
+
+
+const Product = () => {
     const [count , setCount] = useState(0);
+    const {key} = useContext(uniqueKeyContext);
 
     const handleIncrement = () => {
         setCount(count + 1) 
@@ -122,3 +126,6 @@ const Product = ({id}) => {
 }
 
 export default Product
+
+
+

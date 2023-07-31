@@ -6,19 +6,24 @@ import AccountIcon from '../assests/images/account.png'
 import CartIcon from '../assests/images/cart.png'
 
 import './navbar.css'
+import { useNavigate } from 'react-router-dom'
 
 function Navbar() {
   const [menuIsClicked , setMenuIsClicked] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () =>{
     setMenuIsClicked(!menuIsClicked);
     console.log(menuIsClicked);
 
   }
+  const HomeClick = () =>{
+    navigate('/')
+  }
   return (
     <>
         <div className="navbar">
-            <div className="navbar__left">
+            <div className="navbar__left" onClick={HomeClick}>
             <img src={Logo} alt="menu"  className='menuIcon'/>
             <h3 className='logo'>Ecommerce</h3>
             </div>

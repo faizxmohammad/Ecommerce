@@ -1,12 +1,27 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './gadgets.css'
 import LikeIcon from '../assests/images/like.png'
 import sampleImage from '../assests/images/sample.webp'
 import {gadgetsData} from '../Data'
+import { useNavigate } from 'react-router-dom'
+import { uniqueKeyContext } from '../App'
 
 function Gadgets() {
-    let uniqueKey = '';
-    
+    const navigate = useNavigate()
+    const [productId , setProductId] = useState('')
+    const {key , setKey} = useContext(uniqueKeyContext);
+
+    const handleClick = (product) =>{
+        setProductId(product)
+       setKey(product)
+    //    console.log(key);
+        
+        navigate('/Product')
+    }
+   
+  
+    // console.log("unique key" , );
+ 
 
   return (
     <>
@@ -20,8 +35,14 @@ function Gadgets() {
                     gadgetsData.map((items) =>(
                         items.sectionItems.map ((item)=>(
                             item.sectionItems.map((product , index)=>(  
+                            
                                 
-                                <div className="card__wrapper" key={`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}>
+                                <div className="card__wrapper" key={`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}
+                                onClick={() => {
+                                    const uniqueKey = `${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`;
+                                    handleClick(uniqueKey);
+                                  }}
+                                >
                                     {/* <p>key = {`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}</p> */}
                                     <div className="cards" >
                                         {/* Like Icon */}
@@ -64,3 +85,4 @@ function Gadgets() {
 }
 
 export default Gadgets
+
