@@ -382,6 +382,7 @@
     .product > .product__left> .left__bottom{
         width: 100%;
         gap: 40px;
+        height: fit-content;
     }
     .product > .product__left > .left__bottom > img{
         height: 150px;

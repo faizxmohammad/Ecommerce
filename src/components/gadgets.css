@@ -256,7 +256,7 @@
         width: fit-content;
         margin-right: 2,6rem;
         margin-left: 2.6rem;
-        height: 60vh;
+        height: 500px;
     }
 
     .cards{
@@ -283,21 +283,3 @@
     
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .gadgets{
-        margin: 1rem 2.5rem 0rem 4.5rem;
-    }
-    .gadgets__cards{
-        /* flex-wrap: nowrap; */
-        width: 100%;
-        gap: 190px;
-    }
-    .card__wrapper{
-        margin-top: 2rem;
-        width: 200px;
-        gap: 30px;
-        height: 60vh;
-    }
-
-
-}
