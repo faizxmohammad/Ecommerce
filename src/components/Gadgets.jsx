@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './gadgets.css'
 import LikeIcon from '../assests/images/like.png'
 import sampleImage from '../assests/images/sample.webp'
 import {gadgetsData} from '../Data'
 
 function Gadgets() {
+    let uniqueKey = '';
+    
+
   return (
     <>
         <div className="gadgets">
@@ -15,10 +18,11 @@ function Gadgets() {
             <div className="gadgets__cards">
                 {
                     gadgetsData.map((items) =>(
-                        items.sectionItems.map ( (item,index)=>(
-                            item.sectionItems.map((product)=>(  
-                                <div className="card__wrapper">
-                                    <div className="cards">
+                        items.sectionItems.map ((item)=>(
+                            item.sectionItems.map((product , index)=>(  
+                                <div className="card__wrapper" key={`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}>
+                                    {/* <p>key = {`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}</p> */}
+                                    <div className="cards" >
                                         {/* Like Icon */}
                                         <div className="favorite__icon">
                                             <img src={LikeIcon} alt="" />
@@ -29,7 +33,7 @@ function Gadgets() {
                                         </div>
                                     </div>
                                     {/* Product name and price */}
-                                    <div className="products" key={index}>
+                                    <div className="products">
                                             <div className="product__title">
                                                 <h2>{product.itemName}</h2>
                                                 <p>₹{product.itemPrice}</p>
@@ -52,8 +56,6 @@ function Gadgets() {
                     ))
 
                 }
-
-                {/* above here */}
             </div>
         </div>
     </>

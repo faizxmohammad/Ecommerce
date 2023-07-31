@@ -12,10 +12,13 @@ function Items() {
             <div className="items__carousel">
                 <div className="items__containers">
                     {
-                    data.map((items)=>{
-                        return items.sectionItems.map((item)=>{
+                    data.map((items)=>{ 
+                        return items.sectionItems.map((item , index)=>{
                             return (
-                        <div className="card">
+                        <div className="card" key={`${items.sectionName} - ${index} `}>
+                            {/* Printint Key */}
+                            <p>  key={`${items.sectionName} - ${index} `}</p>
+
                             <div className="favoriteContainer">
                                 <img src={likeIcon} alt=""  className='likeIcon'/>
                             </div>

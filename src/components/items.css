@@ -110,7 +110,9 @@ justify-content: center;
 
 @media screen and (min-width :320px ) and (max-width:480px) {
     .items > h1{
-        margin: 2rem 1rem;
+        margin: 2rem 2rem;
+        font-size: 26px;
+        font-weight: bolder;
     }
     .items__carousel{
         margin: 1rem;

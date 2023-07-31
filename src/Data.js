@@ -6,6 +6,7 @@ export const gadgetsData = [
                 "sectionName": "Earbuds",
                 "sectionItems": [
                     {
+                        "id" : 1,
                         "itemName": "boAt Airdopes 141",
                         "itemInfo": "Wireless Earbuds with 8mm drivers, Upto 42 Hours Playback, ENx™ Technology, IPX4 Water Resistance",
                         "itemDescription": "Let the noise of the world drown as you jam to your rhythm with Airdopes 141. Equipped with 8mm drivers, these dope wireless earbuds make your playlist sound better with crystal clear audio quality and powerful bass. Experience seamless calling and be clearly heard with ENx™ Technology. That is not all,  ASAPTM Charge technology empowers you with 75 minutes of playback with just 5 minutes of charging. With IPX4 Sweat and Water Resistance, there's no stopping you from listening to your workout mix while breaking a sweat. Moreover, its IWPTM Technology and Quick Response Touch Controls ensure you can answer calls and switch music without interrupting your flow. Go ahead, your perfect audio match is right here.",
@@ -66,6 +67,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" : 2,
                         "itemName": "boAt Airdopes 161",
                         "itemInfo": "Wireless Earbuds with Massive Playback of upto 17 Hour, IPX5 Water & Sweat Resistance, IWP Technology, Type C Interface",
                         "itemDescription": "Your partner for every vibe, Airdopes 161 earbuds pumps uninterrupted music with its massive playback of upto 17 hour. And when you run out of battery, you can enjoy 180 mins of music with just 10 minutes of charge. Grooving has never been so hasslefree with Bluetooth v5.1 that seamlessly plays your music. Gone are the days when you had to check if your device is connected or not. Our. connects with your paired devices as soon as you open the lid of the case. Indulge in our immersive sound with its 10mm driver and enjoy music for every vibe.",
@@ -126,6 +128,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" : 3,
                         "itemName": "boAt Airdopes 131",
                         "itemInfo": "Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case",
                         "itemDescription": "Sleek. Comfortable. Stylish. And a Splash of Incredible Colours. Bring alive your favourite sounds with these true wireless earbuds Equipped with 13mm drivers for the magical boAt signature sound. Designed for supreme ease with Insta Wake N’ Pair technology that auto connects the moment it’s out of the case and Type C Charging. Tws earbuds to drown all the sounds you don’t need and live every moment. With a battery capacity of 40mAh for each earbud, indulge in a blissful audio experience for up to 3 hours in a go. Tap into instant wireless functionality with optimum Bluetooth V5.0",
@@ -218,6 +221,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" : 4,
                         "itemName": "boAt Airdopes 190",
                         "itemInfo": "Wireless Earbuds with 40 Hours of Playtime, Beast Mode, RGB Lights Featuring ENx™ tech",
                         "itemDescription": "Airdopes 190 delivers the best audio experience that one can get. With ENx™ tech and BEAST™ mode, any and all audio disturbances are blocked and sound is delivered to your ears at lightning fast speed. The 10mm drivers further make sure that you only get the signature sound that boAt is known for.",
@@ -258,6 +262,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" : 5,
                         "itemName": "boAt Airdopes 131",
                         "itemInfo": " Wireless Earbuds Superman DC Edition Earbuds with 13 mm Drivers, Upto 12 hours Nonstop Music, 650mAh Pocket Friendly Charging Case",
                         "itemDescription": "If your every move drips of power, the powerful sound of Airdopes 131 boAt | DC edition is just the thing for you. These truly wireless earbuds are equipped with 13mm drivers that offer you other-worldly experience. Experience durability like that of the Man of Steel with its 12 hours of total playback. Plug-in and be prepared to be awe struck.",
@@ -294,6 +299,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" : 6,
                         "itemName": "boAt Airdopes 181",
                         "itemInfo": "Wireless Earbuds with 10mm Driver, Type C Interface, BEAST™ Mode & Voice Assistant, ENx Technology",
                         "itemDescription": "Get ready to experience a vibe of freshness with the all-new Airdopes 181 bluetooth earbuds. Make your point matter with a crisp mic powered by our ENx™ technology that enables a crystal clear calling experience. Bring out the gamer in you with its low latency BEAST™ Mode and show your friends who’s the boss. Go on a gaming bender or a binging marathon — its ergonomic fit and 20HRS of playback have got you covered. Enjoy music seamlessly with the latest Bluetooth v5.2 and feel the thump of every beat with its powerful 10mm drivers. Airdopes 181 — looks great, sounds even better.",
@@ -371,6 +377,7 @@ export const gadgetsData = [
                 "sectionName": "Gaming Headphones",
                 "sectionItems": [
                     {
+                        "id" :"g1",
                         "itemName": "boAt Immortal 1000D",
                         "itemInfo": "The game begins here. With Immortal 1000D gaming headphones",
                         "itemDescription": "The game begins here. With Immortal 1000D gaming headphones, don’t just play the game - feel it, live it, and own it. Level up your audio game with 7.1 Channel Surround Sound and Dolby Atmos that unleashes the winning beast inside you. Equipped with 50mm drivers, get a powerful 360° gaming experience like no other. Now, you can conquer every game with a sound that provides position accuracy and abstracts. Your everyday gaming is now double the fun with its RGB LED lights. Its lightweight and ergonomic build ensure you have a comfortable bender with your friends. Don’t look further, level up with Immortal 1000D headphones.",
@@ -419,6 +426,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" :"g2",
                         "itemName": "boAt Immortal 1300",
                         "itemInfo": "When you put your heart and soul into gaming, make sure your headphones do it too",
                         "itemDescription": "When you put your heart and soul into gaming, make sure your headphones do it too. Presenting, the next generation of gaming headphones - Immortal 1300. Powered by Driverless 3D Spatial Sound, immerse in the game’s world and achieve pinpoint positional accuracy. Accelerate your performance with its ultra-low latency of 35ms that’s built to win you matches. It comes with breathable, high-quality earmuffs and headband to keep you comfortable during intense gaming sessions. Elevate your gaming experience with its automatic RGB breathing LEDs and dual microphone that makes your in-game communication top-notch. And when you’re not gaming, dive into the entertainment of your choice with boAt Signature Music Mode. Level up your game with Immortal 1300.",
@@ -501,6 +509,7 @@ export const gadgetsData = [
                 "sectionName": "Smart Watches",
                 "sectionItems": [
                     {
+                        "id" :"g3",
                         "itemName": "boAt Wave Connect",
                         "itemInfo": "Bluetooth Calling Smartwatch with 1.69\" (4.29 cm) HD Display with Built in Alexa, 60+ Sports Modes",
                         "itemDescription": "#StayConnected to the people who matter with boAt Wave Connect – our fresh new bluetooth calling smartwatch. Strike the balance between personal and professional with the power to save 20 contacts right in your bluetooth calling smartwatch for instant dialing. Your wrist is ringing – pick up!",
@@ -569,6 +578,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" :"g4",
                         "itemName": "boAt Wave Play",
                         "itemInfo": "Vivid 1.69” HD Display Smartwatch with IP68 Dust & Water Resistance, 10+ Sport Modes",
                         "itemDescription": "It’s time to shine! boAt Wave Play sports a 1.69\" HD display that shines bright up to 550 nits. It is crisp and clear even under the harshest conditions. Access your world with just one touch as boAt Wave Play comes with camera control, music control & a plethora of other features. Make fitness fun with its multiple sports modes ready to assist you in your battle against calories. And get on with the Play!",
@@ -624,6 +634,7 @@ export const gadgetsData = [
                         ]
                     },
                     {
+                        "id" :"g5",
                         "itemName": "boAt Xtend‌",
                         "itemInfo": "Built-in Alexa, 1.69” (4.29 cm) Big Square Display, 14 Sports Modes, 15 Watch Faces",
                         "itemDescription": "Ask more, get more, and do more with the smartest smartwatch in town - the all-new boAt Xtend. Leave your phone in your pocket and get your tasks done with a built-in Alexa. Take control over your music, fitness, and more with a 1.69\" (4.29 Cms) complete capacitive LCD display. Your wellness is now on your wrist with its Guided Meditative Breathing, Stress Monitor, and Sleep SpO2 Monitoring. Its 50 watch faces let you don a unique style every day. Make more out of your days with boAt Xtend.",
