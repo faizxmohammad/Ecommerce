@@ -12,20 +12,24 @@ import Products from './components/Products'
 import { createContext, useState } from 'react'
 
 export const uniqueKeyContext = createContext();
+export const productIdContext = createContext();
 function App() {
 
   const [key , setKey] = useState('');
+  const [productRouteId , setProductRouteId] = useState('')
   return (
     <>
    <uniqueKeyContext.Provider value={{key,setKey}}>
+    <productIdContext.Provider value={{productRouteId , setProductRouteId}}>
     <Router>
       <Routes>
 
         <Route exact path='/' element={<Main/>}/>
-        <Route path='/product' element={<Products/>}/>
+        <Route path={`/Product/*`} element={<Products/>}/>
         
       </Routes>
     </Router>
+    </productIdContext.Provider>
     </uniqueKeyContext.Provider>
 
 

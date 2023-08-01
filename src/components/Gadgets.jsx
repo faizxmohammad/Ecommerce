@@ -4,22 +4,25 @@ import LikeIcon from '../assests/images/like.png'
 import sampleImage from '../assests/images/sample.webp'
 import {gadgetsData} from '../Data'
 import { useNavigate } from 'react-router-dom'
-import { uniqueKeyContext } from '../App'
+import { productIdContext, uniqueKeyContext } from '../App'
 
 function Gadgets() {
     const navigate = useNavigate()
     const [productId , setProductId] = useState('')
-    const {key , setKey} = useContext(uniqueKeyContext);
+
+    const {setKey} = useContext(uniqueKeyContext);
+    const {setProductRouteId} = useContext(productIdContext);
 
     const handleClick = (product) =>{
         setProductId(product)
-        setKey(product)       
-        navigate('/Product')
+        setKey(product)           
+        setProductRouteId(product)
+        navigate(`/Product/${product}`)
         window.scrollTo(0,0)
     }
     useEffect(()=>{
         window.scrollTo(0,0)
-    },[])
+    },[handleClick])
    
   
     // console.log("unique key" , );

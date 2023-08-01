@@ -2,7 +2,7 @@ import React, { Component, useContext, useState } from 'react'
 import './product.css'
 import returnIcon from '../assests/images/rotate-left-solid.svg'
 import truckIcon from '../assests/images/truck-solid.svg'
-import { uniqueKeyContext } from '../App'
+import { productIdContext, uniqueKeyContext } from '../App'
 import { gadgetsData } from '../Data'
 
 
@@ -45,7 +45,6 @@ const Product = () => {
                         products.itemColor.map((color , colorIndex)=>{
                             return color.images.map((image , imageIndex)=>(
                                 colorIndex === imageIndex ? <img  src={image} alt="" /> : null
-                                
                         ))
                     })
                 }
