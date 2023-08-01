@@ -27,6 +27,7 @@ export const gadgetsData = [
                             }
                         ],
                         "itemMainImage": "https://www.deltastore.in/wp-content/uploads/2022/01/main-2_5e478100-31a7-4514-94c1-6943b881da3a_720x.png",
+                        
                         "itemColor": [
                             {
                                 "color": "Black",

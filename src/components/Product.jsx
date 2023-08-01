@@ -25,7 +25,6 @@ const Product = () => {
         }else{
             return text.slice(0, descriptionLength) + "...."
         }
-
     }
   return (
     <>
@@ -41,19 +40,16 @@ const Product = () => {
                 <div className="top">
                     <img src={products.itemMainImage} alt="" />
                 </div>
-                <div className="left__bottom">
-
-                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-141-FI_1f060ff5-cbbf-43f3-b673-41e4aacc7d79_800x.jpg?v=1657869596" alt="" />
-                        
-                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-141-FI_1f060ff5-cbbf-43f3-b673-41e4aacc7d79_800x.jpg?v=1657869596" alt="" />
-
-                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-141-FI_1f060ff5-cbbf-43f3-b673-41e4aacc7d79_800x.jpg?v=16578695960" alt="" />
-
-                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-141-FI_1f060ff5-cbbf-43f3-b673-41e4aacc7d79_800x.jpg?v=1657869596" alt="" />
-
-
-
-                    </div>
+                <div className="left__bottom" key={key}>
+                {
+                        products.itemColor.map((color , colorIndex)=>{
+                            return color.images.map((image , imageIndex)=>(
+                                colorIndex === imageIndex ? <img  src={image} alt="" /> : null
+                                
+                        ))
+                    })
+                }
+                </div>
             </div>
 
             {/* Right container */}
@@ -82,16 +78,16 @@ const Product = () => {
                 </div>
                 <hr />
 
+                <p>Choose a color</p>
                 <div className="right__bottom">
-                    <p>Choose a color</p>
-                    <div className="colors">
-                        <div className="color"></div>
-                        <div className="color"></div>
-                        <div className="color"></div>
-                        <div className="color"></div>
-                        <div className="color"></div>
-                      
-                        <div className="color"></div>
+                    <div className='colorContainer'>
+                    {
+                        products.itemColor.map((color)=>(
+                            <div className='colors'>
+                                <div className="color" key={color.hex} style={{backgroundColor:color.hex}}>  </div>
+                            </div>
+                        ))
+                    }
                     </div>
                 </div>
                 <hr />
@@ -150,5 +146,8 @@ const Product = () => {
 }
 
 export default Product
+
+
+
 
 
