@@ -17,7 +17,7 @@ function Items() {
                             return (
                         <div className="card" key={`${items.sectionName} - ${index} `}>
                             {/* Printint Key */}
-                            <p>  key={`${items.sectionName} - ${index} `}</p>
+                            {/* <p>  key={`${items.sectionName} - ${index} `}</p> */}
 
                             <div className="favoriteContainer">
                                 <img src={likeIcon} alt=""  className='likeIcon'/>

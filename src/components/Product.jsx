@@ -3,26 +3,43 @@ import './product.css'
 import returnIcon from '../assests/images/rotate-left-solid.svg'
 import truckIcon from '../assests/images/truck-solid.svg'
 import { uniqueKeyContext } from '../App'
+import { gadgetsData } from '../Data'
 
 
 const Product = () => {
     const [count , setCount] = useState(0);
     const {key} = useContext(uniqueKeyContext);
+    const descriptionLength = 100;
 
     const handleIncrement = () => {
         setCount(count + 1) 
     }
     const handleDecrement = () =>{
-        if(count == 0) count = 0;
+       if(count > 0){
         setCount(count - 1)
+       }
+    }
+    const getDescription = (text) =>{
+        if(text.length <= descriptionLength){
+            return text;
+        }else{
+            return text.slice(0, descriptionLength) + "...."
+        }
+
     }
   return (
     <>
-        <div className="product">
+    {
+        gadgetsData.map((items)=>(
+            items.sectionItems.map((item)=>(
+                item.sectionItems.map((products , index)=>(
+                    key === `${items.sectionName} - ${item.sectionName} - ${products.itemName} - ${index}` &&
+                
+        <div className="product" key={key}>
             {/* Left container */}
             <div className="product__left">
                 <div className="top">
-                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_grey_6aa6c302-2cfb-4e87-85f7-d67b6f149bf7_600x.png?v=1641980344" alt="" />
+                    <img src={products.itemMainImage} alt="" />
                 </div>
                 <div className="left__bottom">
 
@@ -44,16 +61,20 @@ const Product = () => {
             <div className="product__right">
                 <div className="right__top">
 
-                    <h1 className="title">boAt Airdopes 131</h1>
+                    <h1 className="title">{products.itemName}</h1>
 
-                    <p className="desc">Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case</p>
+                    <p className="desc">{getDescription(products.itemDescription)}</p>
+                
 
                     <div className="rating">
-                        <p>Rating: {4.5}</p>
-                        <p>({190})</p>
+                        <p>Rating: {products.itemRating.reduce((accumulator , currentValue) => accumulator + currentValue , 0)}</p>
+                        <p>Reviews: ({products.itemReviewCount})</p>
                     </div>
                 </div>
                 <hr />
+
+
+
 
                 <div className="right__between">
                 <h1 className="price">$999.00 or 167/month</h1>
@@ -117,15 +138,17 @@ const Product = () => {
             </div>
 
             </div>
-        
-
-
+           
         </div>
+                      ))
+                      ))
+                  ))
+              }
+              
     </>
   )
 }
 
 export default Product
-
 
 

@@ -14,7 +14,6 @@ function Navbar() {
 
   const handleClick = () =>{
     setMenuIsClicked(!menuIsClicked);
-    console.log(menuIsClicked);
 
   }
   const HomeClick = () =>{

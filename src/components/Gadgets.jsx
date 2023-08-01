@@ -13,11 +13,13 @@ function Gadgets() {
 
     const handleClick = (product) =>{
         setProductId(product)
-       setKey(product)
-    //    console.log(key);
-        
+        setKey(product)       
         navigate('/Product')
+        window.scrollTo(0,0)
     }
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
    
   
     // console.log("unique key" , );
@@ -35,8 +37,6 @@ function Gadgets() {
                     gadgetsData.map((items) =>(
                         items.sectionItems.map ((item)=>(
                             item.sectionItems.map((product , index)=>(  
-                            
-                                
                                 <div className="card__wrapper" key={`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}
                                 onClick={() => {
                                     const uniqueKey = `${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`;
@@ -44,6 +44,7 @@ function Gadgets() {
                                   }}
                                 >
                                     {/* <p>key = {`${items.sectionName} - ${item.sectionName} - ${product.itemName} - ${index}`}</p> */}
+
                                     <div className="cards" >
                                         {/* Like Icon */}
                                         <div className="favorite__icon">
